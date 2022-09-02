@@ -1,5 +1,10 @@
-### Maria DB
+* Javascript / jQuery
+* Node.JS / Express.JS
+* MariaDB
+* Nginx
 
+
+### Maria DB
 
 #### table
 ```
