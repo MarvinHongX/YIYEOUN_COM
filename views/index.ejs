@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <title id="title"> 이여운 YIYEOUN </title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="__grid-root">
+    <header class="header-00">
+        <nav class="header-nav">
+            <button id="hamburger" class="header-hamburger">
+                <span class="header-hamburger-icon">
+                    <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="currentColor" d="M0 6h29v3H0zM0 15h29v3H0zM0 24h29v3H0zM0 0z"></path>
+                    </svg>
+                </span>
+            </button>
+            <a href="/" class="header-home">배우 이여운</a>
+            <div class="header-menu" id="menu">
+                <form method="post">
+                <ul class="header-menu-list">
+                    <% for(var i = 0; i < data.length; i++){ %>
+                    <li><a class="header-menu-list-el" id="<%=data[i].userid%>"><%=data[i].userName%></a></li>
+                    <% } %>
+                </ul>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <main class="main-00">
+        <div class="main-top">
+            <div class="main-top-pic" id="main-pic">
+                <div class="main-top-pic-error"></div>
+            </div>
+            <h1 class="main-top-name" id="main-name">
+                <ul class ="main-top-insta" id="main-top-insta"></ul>
+            </h1>
+        </div>
+        <article class="main-article" id="main-article">
+            <ul>
+
+            </ul>
+        </article>
+        <section class="main-gallery" id="main-gallery">
+            <div class="main-gallery-grid" id="main-gallery-grid">
+            </div>
+        </section>
+    </main>
+    <footer class="footer-00">
+        <p class="footer-copyright">©2022. Copyright © YI YEOUN. All rights reserved</p>
+    </footer>
+</div>
+<div class="main-gallery-modal" id="modal">
+    <div class="main-gallery-modal-top">
+        <span class="main-gallery-modal-page"></span>
+        <span class="main-gallery-modal-close">&times;</span>
+    </div>
+    <span class="main-gallery-modal-prev">&lt;</span>
+    <span class="main-gallery-modal-next">&gt;</span>
+    <div class="main-gallery-modal-imgwrapper">
+        <img class="main-gallery-modal-img">
+    </div>
+    <div class="main-gallery-modal-bottom">
+    </div>
+</div>
+    <script type="text/javascript" src="/jquery/jquery.js"></script>
+    <script type="text/javascript" src="/js/script.js"></script>
+</body>
+</html>
